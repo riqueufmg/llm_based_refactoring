@@ -1,3 +1,4 @@
 # .gitignore
 .env
+process.log
 data/repositories/

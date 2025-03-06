@@ -40,12 +40,12 @@ def main():
 	logging.info("Starting process...")
 		
 	# Assign data
-	repository_path = "data/repository/jsoup/jsoup-master"
+	repository_path = "data/repositories/jsoup-master"
 
-	logging.info(f"Processing repository: {repository}")
+	logging.info(f"Processing repository: {repository_path}")
 
-	if is_maven_project(repo_name):
-		check_maven_build(repo_name)
+	if is_maven_project(repository_path):
+		check_maven_build(repository_path)
 	else:
 		logging.warning("not Maven")
 
